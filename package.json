@@ -4,10 +4,10 @@
   "license": "Apache-2.0",
   "description": "CLO common library: components, utils and hooks",
   "main": "dist/cjs/index.js",
-  "module": "dist/esm/index. js",
+  "module": "dist/esm/index.js",
   "scripts": {
     "build": "rimraf dist && NODE_ENV=production BABEL_ENV=production rollup -c --bundleConfigAsCjs",
-    "preinstall": "yarn install && yarn build",
+    "prepare": "yarn build",
     "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx src --fix"
   },
   "files": [
