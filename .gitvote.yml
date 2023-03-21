@@ -1,0 +1,21 @@
+# GitVote metadata file
+
+automation:
+  enabled: true
+  rules:
+    - patterns:
+        - "test/test.txt"
+      profile: profile1
+
+profiles:
+  default:
+    duration: 1min
+    pass_threshold: 50
+    allowed_voters:
+      users:
+        - tegioz
+        - cynthia-sg
+
+  profile1:
+    duration: 1min
+    pass_threshold: 75
